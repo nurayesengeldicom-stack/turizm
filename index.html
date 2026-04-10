@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Школьные поездки</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ font-family:'Montserrat', sans-serif;
+}
+
+body{
+ background:#ffffff;
+ color:#333;
+}
+
+/* НАВИГАЦИЯ */
+nav{
+ position:absolute;
+ width:100%;
+ display:flex;
+ justify-content:space-between;
+ padding:20px 50px;
+ color:white;
+}
+
+nav a{
+ color:white;
+ text-decoration:none;
+ margin-left:20px;
+ font-weight:500;
+}
+
+/* ГЛАВНЫЙ ЭКРАН */
+header{
+ height:100vh;
+ background:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470') center/cover no-repeat;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+ text-align:center;
+ color:white;
+}
+
+header h1{
+ font-size:64px;
+ font-weight:600;
+}
+
+header p{
+ margin:15px 0;
+ font-size:20px;
+}
+
+.btn{
+ margin-top:20px;
+ padding:14px 32px;
+ background:#ff6b00;
+ border-radius:30px;
+ color:white;
+ text-decoration:none;
+ font-weight:600;
+}
+
+/* БЛОК С 4 ФОТО */
+.gallery{
+ display:grid;
+ grid-template-columns:repeat(4,1fr);
+ gap:20px;
+ padding:60px;
+}
+
+.item{
+ position:relative;
+ border-radius:15px;
+ overflow:hidden;
+}
+
+.item img{
+ width:100%;
+ height:260px;
+ object-fit:cover;
+}
+
+.item span{
+ position:absolute;
+ bottom:15px;
+ left:15px;
+ color:white;
+ font-size:18px;
+ font-weight:600;
+}
+
+/* ВИДЕО */
+.video{
+ padding:80px 20px;
+ text-align:center;
+}
+
+.video h2{
+ margin-bottom:30px;
+ font-size:32px;
+}
+
+.video iframe{
+ width:80%;
+ height:450px;
+ border-radius:20px;
+}
+
+/* ФУТЕР */
+footer{
+ background:#111;
+ color:white;
+ text-align:center;
+ padding:25px;
+ margin-top:50px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+ <div><b>TravelEdu</b></div>
+ <div>
+   <a href="#">Главная</a>
+   <a href="#">Поездки</a>
+   <a href="#">О нас</a>
+   <a href="#">Контакты</a>
+ </div>
+</nav>
+
+<header>
+ <h1>Путешествуй с классом</h1>
+ <p>Новые знания и приключения</p>
+ <a href="#" class="btn">Подробнее</a>
+</header>
+
+<!-- 4 КАРТИНКИ -->
+<section class="gallery">
+
+ <div class="item">
+   <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+   <span>Горы</span>
+ </div>
+
+ <div class="item">
+   <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+   <span>Море</span>
+ </div>
+
+ <div class="item">
+   <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b">
+   <span>Город</span>
+ </div>
+
+ <div class="item">
+   <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d">
+   <span>Экскурсии</span>
+ </div>
+
+</section>
+
+<!-- ВИДЕО -->
+<section class="video">
+ <h2>Видео о наших поездках</h2>
+
+ <iframe 
+ src="https://www.youtube.com/embed/Scxs7L0vhZ4" 
+ frameborder="0" 
+ allowfullscreen>
+ </iframe>
+
+</section>
+
+<footer>
+ <p>© 2026 Школьные поездки</p>
+</footer>
+
+</body>
+</html>
